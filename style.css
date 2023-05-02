@@ -75,10 +75,17 @@ ul {
   list-style-type: none;
 }
 
-.port ,.site{
+.port, .site{
   display: flex;
 }
 
+.site {
+  text-align: center;
+}
+
+.site > div {
+  flex-basis: 100%;
+}
 
 .facebook, .twitter{
   padding-top: 12px;
@@ -86,9 +93,8 @@ ul {
   border: 1px#3f464d solid;
   border-top: 0px;
   border-left: 0px;
+  flex-basis: 50%;
 }
-
-
 
 .portfolio{
   border:1px #3f464d solid;
@@ -103,11 +109,11 @@ ul {
   background-color:  #e74c3c;
 }
 
-.facebook a:hover {
+.facebook:hover {
   background-color: #3b5998;
 }
 
-.twitter a:hover{
+.twitter:hover{
   background-color: #1da1f2;
 }
 
